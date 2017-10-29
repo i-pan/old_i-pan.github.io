@@ -118,6 +118,10 @@ background-color: transparent;
     text-transform: uppercase;
 }
 
+#page-featured{
+    padding: 75px 0;
+    background:#fff;
+}
 
 #page-profile{
     padding: 75px 0;
