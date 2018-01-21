@@ -1,309 +1,368 @@
 <!DOCTYPE html>
-<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" style=""><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" style="">
+  <!--
+  <![endif]-->
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112817610-1"></script>
+    <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-112817610-1');
+</script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Ian Pan</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="author" content="">
-
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-	<link rel="manifest" href="manifest.json">
-	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
-	<meta name="theme-color" content="#ffffff">
-
-        <!-- Bootstrap core CSS -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-         <!-- Magnific popup -->
-        <link rel="stylesheet" href="css/magnific-popup.css">
-        <!-- Custom styles for this template -->
-        <link rel="stylesheet" href="css/main.css">
-
-        <!-- Color styles -->
-        <link rel="stylesheet" href="css/colors/blue.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">  
-        <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
-        <style>
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta name="author" content="">
+              <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+              <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+                <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+                  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+                    <link rel="manifest" href="manifest.json">
+                      <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+                        <meta name="theme-color" content="#ffffff">
+                          <!-- Bootstrap core CSS -->
+                          <link rel="stylesheet" href="css/bootstrap.min.css">
+                            <!-- Magnific popup -->
+                            <link rel="stylesheet" href="css/magnific-popup.css">
+                              <!-- Custom styles for this template -->
+                              <link rel="stylesheet" href="css/main.css">
+                                <!-- Color styles -->
+                                <link rel="stylesheet" href="css/colors/blue.css">
+                                  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+                                    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+                                      <style>
         body {
                 font-family: 'Lato';
         }
         </style>
-       <!-- <link rel="stylesheet" href="css/colors/yellow.css">-->
-        <!-- <link rel="stylesheet" href="css/colors/red.css"> -->
-       <!--  <link rel="stylesheet" href="css/colors/purple.css">-->
-       <!--  <link rel="stylesheet" href="css/colors/orange.css">-->
-       <!--  <link rel="stylesheet" href="css/colors/green.css">-->
-
-         <!-- Feature detection -->
-        <script src="js/modernizr-2.6.2.min.js"></script>
-        <!-- Fonts -->
-        <link href="css/css" rel="stylesheet" type="text/css">
-        <link href="css/css(1)" rel="stylesheet" type="text/css">
-
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-          <script src="js/plugins/html5shiv.js"></script>
-          <script src="js/plugins/respond.min.js"></script>
-        <![endif]-->
-    </head>
-    <body style=""><img class="vegas-background" src="img/sliders/glaciers.jpg" style="position: fixed; left: 0px; top: -27.5px; width: 1440px; height: 810px; bottom: auto; right: auto;"><div class="vegas-overlay" style="margin: 0px; padding: 0px; position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; background-image: url(&quot;img/overlays/16.png&quot;);"></div>
-  <div id="undefined-sticky-wrapper" class="sticky-wrapper" style="height: 55px;"><div class="navbar navbar-default navbar-static-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav" id="main-menu">
-            <li><a href="#page-welcome">Home</a></li>
-            <li><a href="#page-featured">Featured</a></li>
-            <li><a href="#page-profile">About Me</a></li>
-            <li><a href="#page-skills">Skills</a></li>
-            <li><a href="#page-education">Education</a></li>
-            <li><a href="#page-experience">Experience</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </div></div>
-    <!-- welcome begins -->
-    <section id="page-welcome" class="page-welcome">
-      <div>
-          <ul class="slider-controls">
-              <li><a id="vegas-next" class="next" href="#"></a></li>
-              <li><a id="vegas-prev" class="prev" href="#"></a></li>
-          </ul>
-        </div>
-        <div class="container">
-            <div class="row">
-                <header class="centered">
-                    <h1>Ian Pan</h1>
-                    <p>DATA | MEDICINE | AI</p>
-                </header>
-                <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/ian-pan-74687089/" class="btn btn-round btn-clear btn-linkedin"><i class="fa fa-linkedin-square"></i></a>
-                        <a href="https://github.com/i-pan" class="btn btn-round btn-clear btn-github"><i class="fa fa-github"></i></a>
-                        <!-- <a href="resume.pdf" class="btn btn-round btn-clear"><i class="fa fa-file-pdf-o"></i></a> -->
-                </div>
-                <a href="mailto:ian_pan@brown.edu" class="btn btn-default hire-me">Email Me</a>
-            </div>
-        </div>
-    </section><!-- welcome ends -->
-    <!-- featured begins --> 
-    <section id="page-featured" class="page-featured">
-      <div class="container">
-      <h2 class="section-title">Featured</h2>
-      <h3>October 2017</h3>
-        <p>I placed <strong>2nd</strong> in the <a href="http://rsnachallenges.cloudapp.net/competitions/4#learn_the_details-news">RSNA Pediatric Bone Age Challenge</a>, the inaugural machine learning competition sponsored by RSNA!</p>
-      <h3>May 2017</h3>
-        <p>Our paper <a href="http://ajph.aphapublications.org/doi/abs/10.2105/AJPH.2017.303711">Machine Learning for Social Services: A Study of Prenatal Case Management</a> has been published in the American Journal of Public Health!</p>
-      </div>
-    </section>
-    <!-- featured ends -->
-    <!-- profile begins -->
-    <section id="page-profile" class="page-profile">
-      <div class="container">
-                <header class="section-header">
-                    <h2 class="section-title">About Me</h2>
-                    <div class="spacer"></div>
-                    <p class="section-subtitle">Future physician passionate about machine learning, data, and making an impact.</p>
-                </header>
-            <div class="row">
-              <div class="col-md-3">
-                 <div class="profile"><img src="img/profile.png" alt="profile"></div>
-              </div>
-               <div class="col-md-9">
-                <p>Hi there! I'm Ian, currently a second-year medical student at the Warren Alpert Medical School of Brown University in Providence, Rhode Island.</p>
-                <p>My passion lies at the intersection of machine learning, data science, and healthcare. I believe that we can leverage modern advances in machine learning in concert with vast amounts of biomedical data to ultimately provide faster, safer, and better care for patients.</p>
-                <p>In my free time, I enjoy binge-watching the latest TV shows, lifting heavy things, chilling out with music, and eating ice cream.</p>
-                <p>I was born in Illinois but consider myself a native of Los Angeles, California who still hasn't acclimated to New England winters.</p>
-              </div>
-            </div>
-      </div>
-    </section><!-- profile ends -->
-    <!-- skills begins -->
-     <section id="page-skills" class="page-skills">
-       <div class="container">
-                 <header class="section-header">
-                    <h2 class="section-title"><span>Skills</span></h2>
-                      <div class="spacer"></div>
-                    <p class="section-subtitle">
-                </p></header>
-            <div class="row">
-              <div class="col-md-2"></div>
-              <div class="col-md-2">
-               <span class="chart" data-percent="90">
-                      <span class="percent"></span>
-                      <h3>Python</h3>
-		      <p>Expert</p>
-               </span>
-              </div>
-               <div class="col-md-4">
-               <span class="chart" data-percent="90">
-                      <span class="percent"></span>
-                      <h3>R</h3>
-                      <p>Expert</p>
-               </span>
-              </div>
-               <div class="col-md-2">
-               <span class="chart" data-percent="80">
-                      <span class="percent"></span>
-                      <h3>SQL</h3>
-                      <p>Proficient</p>
-               </span>
-               </div>
-               <div class="col-md-2"></div>
-               <div class="col-md-3">
-               <span class="chart" data-percent="95">
-                      <span class="percent"></span>
-                       <h3>Machine Learning</h3>
-                       <p>Expert</p>
-               </span>
-              </div>
-               <div class="col-md-3">
-               <span class="chart" data-percent="90">
-                      <span class="percent"></span>
-                      <h3>Data Science</h3>
-                      <p>Expert</p>
-               </span>
-              </div>
-              <div class="col-md-3">
-               <span class="chart" data-percent="90">
-                      <span class="percent"></span>
-                      <h3>Statistics</h3>
-                      <p>Expert</p>
-               </span>
-              </div>
-               <div class="col-md-3">
-               <span class="chart" data-percent="85">
-                      <span class="percent"></span>
-                      <h3>Deep Learning</h3>
-                      <p>Proficient</p>
-               </span>
-              </div>
-            </div>
-          </div>
-        
-    </section><!-- skills ends -->
-    <!-- education begins -->
-     <section id="page-education" class="page-education">
-       <div class="container" class=>
-                <header class="section-header">
-                    <h2 class="section-title"><span>Education</span></h2>
-                     <div class="spacer"></div>
-                    <p class="section-subtitle"></p>
-                </header>
-                <div class="row">
-                 <div class="col-md-4 col-md-offset-4">
-                  <article class="education">
-                    <header class="centered">
-                      <h3>Warren Alpert Medical School</h3>
-                      <p>Doctor of Medicine</p>
-                      <p>May 2020</p>
-                      <!-- <br>
-                      <img src="/img/cal.png" /> -->
-                    </header>
-                  </article>
-                </div>
-                <div class="col-md-4 col-md-offset-4">
-                  <article class="education">
-                    <header class="centered">
-                      <h3>Brown University</h3>
-                      <p>Master of Arts, Biostatistics</p>
-                      <p>May 2016</p>
-                    </header>
-                  </article>
-                </div>
-                <div class="col-md-4 col-md-offset-4">
-                  <article class="education">
-                    <header class="centered">
-                      <h3>Brown University</h3>
-                      <p>Bachelor of Science, Applied Mathematics-Biology</p>
-                      <p>May 2016</p>
-                    </header>
-                  </article>
-                </div>
-            </div>
-       </div>
-    </section><!-- education ends -->
-    <!-- experience begins -->
-     <section id="page-experience" class="page-experience">
-       <div class="container">
-                <header class="section-header">
-                    <h2 class="section-title"><span>Experience</span></h2>
-                     <div class="spacer"></div>
-                    <p class="section-subtitle"></p>
-                </header>
-                <div class="row">
-                <div class="col-md-4">
-                <article class="experience">
-                  <header>
-                    <h3>Machine Learning Engineer</h3>
-                    <h4>3D Laboratory</h4>
-                     <p><strong>Rhode Island Hospital |</strong> Providence, RI</p><p>Oct 2016 - Present</p>
-                  </header>
-                    <p>Apply machine learning to various medical image analysis problems.</p>
-                    <p>Developing a 3D convolutional neural network to segment intracranial hemorrhage in computed tomography (CT) scans of the head.</p>
-                    <p>Using convolutional neural networks to screen chest X-rays into positive and negative findings.</p>
-                </article>
-                </div>
-                 <div class="col-md-4">
-                  <article class="experience">
-                    <header>
-                      <h3>Data Extractor Lead</h3>
-                      <h4>Center for Evidence Synthesis in Health</h4>
-                      <p><strong>Brown University |</strong> Providence, RI</p>
-                      <p>Oct 2015 - Oct 2016</p>
-                    </header>
-                      <p>Extracted and reviewed quantitative data from over 300 clinical trials and observational studies.</p>
-                      <p>Proofread and edited data extractions performed by other data extractors.</p>
-                      <p>Assembled all data into a central dataset for client use.</p>
-                        <p>Contributed to <a href="https://effectivehealthcare.ahrq.gov/topics/tympanostomy-tubes/research-2017/">systematic review examining efficacy of tympanostomy tubes in children with otitis media.</a></p>
-                      </article>
-                </div>
-                  <div class="col-md-4">
-                  <article class="experience">
-                    <header>
-                      <h3>Data Science Fellow</h3>
-                      <h4>Data Science for Social Good Fellowship</h4>
-                      <p><strong>University of Chicago |</strong> Chicago, IL</p>
-                    </header>
-                      <p>May 2015 - Aug 2015</p>
-                      <p>Used data science to identify women at high risk of experiencing an adverse birth outcome.</p>
-                      <p>Developed a machine learning pipeline to extract, transform, and load data from administrative databases that were used to train machine learning models.</p>
-                      <p>Developed a <a href="http://ipan.pythonanywhere.com">web application</a> to facilitate client and provider usage in the field.</p>
-                      <p>Published methodology and findings in the American Journal of Public Health: <a href="http://ajph.aphapublications.org/doi/abs/10.2105/AJPH.2017.303711">Pan et al. (2017) Machine Learning for Social Services: A Study of Prenatal Case Management.</a></p>
-                      <p>GitHub open source repository available <a href="https://github.com/dssg/babies-public">here.</a></p>
-                  </article>
-                </div>
-              </div>
-    </section><!-- experience ends -->
-    <!-- portfolio begins -->
-
-        <!-- End row -->
-
-        
-     <!-- contact ends -->
-
-
-        <script src="js/jquery-1.10.2.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery.scrollTo.js"></script>
-        <script src="js/jquery.nav.js"></script>
-        <script src="js/jquery.sticky.js"></script>
-        <script src="js/jquery.easypiechart.min.js"></script>
-        <script src="js/jquery.vegas.min.js"></script>
-        <script src="js/jquery.isotope.min.js"></script>
-        <script src="js/jquery.magnific-popup.min.js"></script>
-        <script src="js/jquery.validate.js"></script>
-        <script src="js/waypoints.min.js"></script>
-        <script src="js/main.js"></script>
-    
-
-</body></html>
+                                      <!-- <link rel="stylesheet" href="css/colors/yellow.css">-->
+                                      <!-- <link rel="stylesheet" href="css/colors/red.css"> -->
+                                      <!--  <link rel="stylesheet" href="css/colors/purple.css">-->
+                                      <!--  <link rel="stylesheet" href="css/colors/orange.css">-->
+                                      <!--  <link rel="stylesheet" href="css/colors/green.css">-->
+                                      <!-- Feature detection -->
+                                      <script src="js/modernizr-2.6.2.min.js"></script>
+                                      <!-- Fonts -->
+                                      <link href="css/css" rel="stylesheet" type="text/css">
+                                        <link href="css/css(1)" rel="stylesheet" type="text/css">
+                                          <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+                                          <!--[if lt IE 9]>
+                                          <script src="js/plugins/html5shiv.js"></script>
+                                          <script src="js/plugins/respond.min.js"></script>
+                                          <![endif]-->
+                                        </head>
+                                        <body style="">
+                                          <img class="vegas-background" src="img/sliders/glaciers.jpg" style="position: fixed; left: 0px; top: -27.5px; width: 1440px; height: 810px; bottom: auto; right: auto;">
+                                            <div class="vegas-overlay" style="margin: 0px; padding: 0px; position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; background-image: url(&quot;img/overlays/16.png&quot;);"></div>
+                                            <div id="undefined-sticky-wrapper" class="sticky-wrapper" style="height: 55px;">
+                                              <div class="navbar navbar-default navbar-static-top" role="navigation">
+                                                <div class="container">
+                                                  <div class="navbar-header">
+                                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                                                      <span class="sr-only">Toggle navigation</span>
+                                                      <span class="icon-bar"></span>
+                                                      <span class="icon-bar"></span>
+                                                      <span class="icon-bar"></span>
+                                                    </button>
+                                                  </div>
+                                                  <div class="navbar-collapse collapse">
+                                                    <ul class="nav navbar-nav" id="main-menu">
+                                                      <li>
+                                                        <a href="#page-welcome">Home</a>
+                                                      </li>
+                                                      <li>
+                                                        <a href="#page-featured">Featured</a>
+                                                      </li>
+                                                      <li>
+                                                        <a href="#page-profile">About Me</a>
+                                                      </li>
+                                                      <li>
+                                                        <a href="#page-skills">Skills</a>
+                                                      </li>
+                                                      <li>
+                                                        <a href="#page-education">Education</a>
+                                                      </li>
+                                                      <li>
+                                                        <a href="#page-experience">Experience</a>
+                                                      </li>
+                                                    </ul>
+                                                  </div>
+                                                  <!--/.nav-collapse -->
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <!-- welcome begins -->
+                                            <section id="page-welcome" class="page-welcome">
+                                              <div>
+                                                <ul class="slider-controls">
+                                                  <li>
+                                                    <a id="vegas-next" class="next" href="#"></a>
+                                                  </li>
+                                                  <li>
+                                                    <a id="vegas-prev" class="prev" href="#"></a>
+                                                  </li>
+                                                </ul>
+                                              </div>
+                                              <div class="container">
+                                                <div class="row">
+                                                  <header class="centered">
+                                                    <h1>Ian Pan</h1>
+                                                    <p>DATA | MEDICINE | AI</p>
+                                                  </header>
+                                                  <div class="social-icons">
+                                                    <a href="https://www.linkedin.com/in/ian-pan-74687089/" class="btn btn-round btn-clear btn-linkedin">
+                                                      <i class="fa fa-linkedin-square"></i>
+                                                    </a>
+                                                    <a href="https://github.com/i-pan" class="btn btn-round btn-clear btn-github">
+                                                      <i class="fa fa-github"></i>
+                                                    </a>
+                                                    <!-- <a href="resume.pdf" class="btn btn-round btn-clear"><i class="fa fa-file-pdf-o"></i></a> -->
+                                                  </div>
+                                                  <a href="mailto:ian_pan@brown.edu" class="btn btn-default hire-me">Email Me</a>
+                                                </div>
+                                              </div>
+                                            </section>
+                                            <!-- welcome ends -->
+                                            <!-- featured begins -->
+                                            <section id="page-featured" class="page-featured">
+                                              <div class="container">
+                                                <h2 class="section-title">Featured</h2>
+                                                <h3>October 2017</h3>
+                                                <p>I placed 
+                                                  <strong>2nd</strong> in the 
+                                                  <a href="http://rsnachallenges.cloudapp.net/competitions/4#learn_the_details-news">RSNA Pediatric Bone Age Challenge</a>, the inaugural machine learning competition sponsored by RSNA!
+                                                </p>
+                                                <h3>May 2017</h3>
+                                                <p>Our paper 
+                                                  <a href="http://ajph.aphapublications.org/doi/abs/10.2105/AJPH.2017.303711">Machine Learning for Social Services: A Study of Prenatal Case Management</a> has been published in the American Journal of Public Health!
+                                                </p>
+                                              </div>
+                                            </section>
+                                            <!-- featured ends -->
+                                            <!-- profile begins -->
+                                            <section id="page-profile" class="page-profile">
+                                              <div class="container">
+                                                <header class="section-header">
+                                                  <h2 class="section-title">About Me</h2>
+                                                  <div class="spacer"></div>
+                                                  <p class="section-subtitle">Future physician passionate about machine learning, data, and making an impact.</p>
+                                                </header>
+                                                <div class="row">
+                                                  <div class="col-md-3">
+                                                    <div class="profile">
+                                                      <img src="img/profile.png" alt="profile">
+                                                      </div>
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                      <p>Hi there! I'm Ian, currently a second-year medical student at the Warren Alpert Medical School of Brown University in Providence, Rhode Island.</p>
+                                                      <p>My passion lies at the intersection of machine learning, data science, and healthcare. I believe that we can leverage modern advances in machine learning in concert with vast amounts of biomedical data to ultimately provide faster, safer, and better care for patients.</p>
+                                                      <p>In my free time, I enjoy binge-watching the latest TV shows, lifting heavy things, chilling out with music, and eating ice cream.</p>
+                                                      <p>I was born in Illinois but consider myself a native of Los Angeles, California who still hasn't acclimated to New England winters.</p>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </section>
+                                              <!-- profile ends -->
+                                              <!-- skills begins -->
+                                              <section id="page-skills" class="page-skills">
+                                                <div class="container">
+                                                  <header class="section-header">
+                                                    <h2 class="section-title">
+                                                      <span>Skills</span>
+                                                    </h2>
+                                                    <div class="spacer"></div>
+                                                    <p class="section-subtitle"></p>
+                                                  </header>
+                                                  <div class="row">
+                                                    <div class="col-md-2"></div>
+                                                    <div class="col-md-2">
+                                                      <span class="chart" data-percent="90">
+                                                        <span class="percent"></span>
+                                                        <h3>Python</h3>
+                                                        <p>Expert</p>
+                                                      </span>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                      <span class="chart" data-percent="90">
+                                                        <span class="percent"></span>
+                                                        <h3>R</h3>
+                                                        <p>Expert</p>
+                                                      </span>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                      <span class="chart" data-percent="80">
+                                                        <span class="percent"></span>
+                                                        <h3>SQL</h3>
+                                                        <p>Proficient</p>
+                                                      </span>
+                                                    </div>
+                                                    <div class="col-md-2"></div>
+                                                    <div class="col-md-3">
+                                                      <span class="chart" data-percent="95">
+                                                        <span class="percent"></span>
+                                                        <h3>Machine Learning</h3>
+                                                        <p>Expert</p>
+                                                      </span>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                      <span class="chart" data-percent="90">
+                                                        <span class="percent"></span>
+                                                        <h3>Data Science</h3>
+                                                        <p>Expert</p>
+                                                      </span>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                      <span class="chart" data-percent="90">
+                                                        <span class="percent"></span>
+                                                        <h3>Statistics</h3>
+                                                        <p>Expert</p>
+                                                      </span>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                      <span class="chart" data-percent="85">
+                                                        <span class="percent"></span>
+                                                        <h3>Deep Learning</h3>
+                                                        <p>Proficient</p>
+                                                      </span>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </section>
+                                              <!-- skills ends -->
+                                              <!-- education begins -->
+                                              <section id="page-education" class="page-education">
+                                                <div class="container" class=>
+                                                  <header class="section-header">
+                                                    <h2 class="section-title">
+                                                      <span>Education</span>
+                                                    </h2>
+                                                    <div class="spacer"></div>
+                                                    <p class="section-subtitle"></p>
+                                                  </header>
+                                                  <div class="row">
+                                                    <div class="col-md-4 col-md-offset-4">
+                                                      <article class="education">
+                                                        <header class="centered">
+                                                          <h3>Warren Alpert Medical School</h3>
+                                                          <p>Doctor of Medicine</p>
+                                                          <p>May 2020</p>
+                                                          <!-- <br><img src="/img/cal.png" /> -->
+                                                        </header>
+                                                      </article>
+                                                    </div>
+                                                    <div class="col-md-4 col-md-offset-4">
+                                                      <article class="education">
+                                                        <header class="centered">
+                                                          <h3>Brown University</h3>
+                                                          <p>Master of Arts, Biostatistics</p>
+                                                          <p>May 2016</p>
+                                                        </header>
+                                                      </article>
+                                                    </div>
+                                                    <div class="col-md-4 col-md-offset-4">
+                                                      <article class="education">
+                                                        <header class="centered">
+                                                          <h3>Brown University</h3>
+                                                          <p>Bachelor of Science, Applied Mathematics-Biology</p>
+                                                          <p>May 2016</p>
+                                                        </header>
+                                                      </article>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </section>
+                                              <!-- education ends -->
+                                              <!-- experience begins -->
+                                              <section id="page-experience" class="page-experience">
+                                                <div class="container">
+                                                  <header class="section-header">
+                                                    <h2 class="section-title">
+                                                      <span>Experience</span>
+                                                    </h2>
+                                                    <div class="spacer"></div>
+                                                    <p class="section-subtitle"></p>
+                                                  </header>
+                                                  <div class="row">
+                                                    <div class="col-md-4">
+                                                      <article class="experience">
+                                                        <header>
+                                                          <h3>Machine Learning Engineer</h3>
+                                                          <h4>3D Laboratory</h4>
+                                                          <p>
+                                                            <strong>Rhode Island Hospital |</strong> Providence, RI
+                                                          </p>
+                                                          <p>Oct 2016 - Present</p>
+                                                        </header>
+                                                        <p>Apply machine learning to various medical image analysis problems.</p>
+                                                        <p>Automatic detection and segmentation of intracranial hemorrhage in head CT scans using 3D convolutional neural networks (CNNs).</p>
+                                                        <p>Screening for pathological findings in chest radiographs using CNNs.</p>
+                                                        <p>Bone age estimation from pediatric hand radiographs using CNNs.</p>
+                                                        <p>Malignancy scoring of thyroid nodules viewed on ultrasound using CNNs.</p>
+                                                      </article>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                      <article class="experience">
+                                                        <header>
+                                                          <h3>Data Extractor Lead</h3>
+                                                          <h4>Center for Evidence Synthesis in Health</h4>
+                                                          <p>
+                                                            <strong>Brown University |</strong> Providence, RI
+                                                          </p>
+                                                          <p>Oct 2015 - Oct 2016</p>
+                                                        </header>
+                                                        <p>Extracted and reviewed quantitative data from over 300 clinical trials and observational studies.</p>
+                                                        <p>Proofread and edited data extractions performed by other data extractors.</p>
+                                                        <p>Assembled all data into a central dataset for client use.</p>
+                                                        <p>Contributed to 
+                                                          <a href="https://effectivehealthcare.ahrq.gov/topics/tympanostomy-tubes/research-2017/">systematic review examining efficacy of tympanostomy tubes in children with otitis media.</a>
+                                                        </p>
+                                                      </article>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                      <article class="experience">
+                                                        <header>
+                                                          <h3>Data Science Fellow</h3>
+                                                          <h4>Data Science for Social Good Fellowship</h4>
+                                                          <p>
+                                                            <strong>University of Chicago |</strong> Chicago, IL
+                                                          </p>
+                                                        </header>
+                                                        <p>May 2015 - Aug 2015</p>
+                                                        <p>Used data science to identify women at high risk of experiencing an adverse birth outcome.</p>
+                                                        <p>Developed a machine learning pipeline to extract, transform, and load data from administrative databases that were used to train machine learning models.</p>
+                                                        <p>Developed a 
+                                                          <a href="http://ipan.pythonanywhere.com">web application</a> to facilitate client and provider usage in the field.
+                                                        </p>
+                                                        <p>Published methodology and findings in the American Journal of Public Health: 
+                                                          <a href="http://ajph.aphapublications.org/doi/abs/10.2105/AJPH.2017.303711">Pan et al. (2017) Machine Learning for Social Services: A Study of Prenatal Case Management.</a>
+                                                        </p>
+                                                        <p>GitHub open source repository available 
+                                                          <a href="https://github.com/dssg/babies-public">here.</a>
+                                                        </p>
+                                                      </article>
+                                                    </div>
+                                                  </div>
+                                                </section>
+                                                <!-- experience ends -->
+                                                <!-- portfolio begins -->
+                                                <!-- End row -->
+                                                <!-- contact ends -->
+                                                <script src="js/jquery-1.10.2.min.js"></script>
+                                                <script src="js/bootstrap.min.js"></script>
+                                                <script src="js/jquery.scrollTo.js"></script>
+                                                <script src="js/jquery.nav.js"></script>
+                                                <script src="js/jquery.sticky.js"></script>
+                                                <script src="js/jquery.easypiechart.min.js"></script>
+                                                <script src="js/jquery.vegas.min.js"></script>
+                                                <script src="js/jquery.isotope.min.js"></script>
+                                                <script src="js/jquery.magnific-popup.min.js"></script>
+                                                <script src="js/jquery.validate.js"></script>
+                                                <script src="js/waypoints.min.js"></script>
+                                                <script src="js/main.js"></script>
+                                              </body>
+                                            </html>
