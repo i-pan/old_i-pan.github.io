@@ -482,11 +482,14 @@ label.valid{
    ========================================================================== */
 
 .social-icons .btn{
-    margin-right: 15px;
+    margin-right: 5px;
+    margin-left: 5px;
+
 }
 .social-icons{
     padding-top: 10px;
     margin-bottom: 35px;
+    text-align: center;
 }
 .social-icons .btn.btn-clear{
     border: 1px solid #fff;
