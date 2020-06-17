@@ -94,9 +94,9 @@ $('.chart').waypoint(function() {
 
 		$.vegas('slideshow', {
 			  backgrounds:[
-                { src:'img/sliders/glaciers.jpg', fade:1000 },
-                { src:'img/sliders/iceland.jpg', fade:1000 },
-                { src:'img/sliders/yangshou.jpg', fade:1000 }
+                { src:'img/sliders/cardiff.jpg', fade:1000 },
+                { src:'img/sliders/caerphilly.jpg', fade:1000 },
+                { src:'img/sliders/cambridge.jpg', fade:1000 }
 			  ]
 			})('overlay', {
 			  src:'img/overlays/16.png'

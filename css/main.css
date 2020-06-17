@@ -287,7 +287,7 @@ background-color: transparent;
 
 .vegas-overlay {
     background: transparent url(../img/overlays/16.png);
-    opacity: 0.5;
+    opacity: 0.3;
     z-index: -1;
 }
 
